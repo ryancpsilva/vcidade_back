@@ -1,16 +1,16 @@
 import api from "../config/axios.js";
+import NotFoundError from "../errors/NotFoundError.js";
 
 export const getCity = async (city) => {
-    try {
-        if (city) {
-            const response = await api.get(`/cities?cityName=${city}`);
-            return response.data;
-        } else {
-            const response = await api.get(`/cities`);
-            return response.data;
-        }
-    } catch (error) {
-        console.log(error.response?.data || error.message);
-        throw new Error("Erro ao buscar crimes");
+
+    const url = city
+        ? `/cities?cityName=${city}`
+        : `/cities`;
+    const response = await api.get(url);
+
+    if (!response || response.data.data.length === 0) {
+        throw new NotFoundError("Cidade não encontrada");
     }
-}
+
+    return response.data;
+};

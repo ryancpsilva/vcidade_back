@@ -1,4 +1,4 @@
-export const validateCity = (req, res, next) => {
+export function validateCity(req, res, next) {
 
     const { city } = req.query;
 

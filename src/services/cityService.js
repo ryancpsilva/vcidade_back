@@ -1,7 +1,7 @@
 import api from "../config/axios.js";
 import NotFoundError from "../errors/NotFoundError.js";
 
-export const getCity = async (city) => {
+export async function getCity(city) {
 
     const url = city
         ? `/cities?cityName=${city}`

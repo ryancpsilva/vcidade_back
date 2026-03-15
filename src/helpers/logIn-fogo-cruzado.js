@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const logIn = async () => {
+export async function logIn(){
     try {
         
         const response = await axios.post("https://api-service.fogocruzado.org.br/api/v2/auth/login", {

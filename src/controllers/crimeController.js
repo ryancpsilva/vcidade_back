@@ -1,6 +1,6 @@
 import { getCrimesByCity, getNeighborhoodCrimes } from "../services/crimeService.js";
 
-export async function listCrimes(req, res) {
+export async function listCrimes(req, res, next) {
   try {
     const { city, neighborhood } = req.query
     if (neighborhood) {
@@ -12,9 +12,6 @@ export async function listCrimes(req, res) {
     }
 
   } catch (error) {
-
-    res.status(error.statusCode || 500).json({
-      error: error.message
-    });
+    next(error)
   }
 }

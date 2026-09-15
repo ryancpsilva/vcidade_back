@@ -1,7 +1,7 @@
-export class ValidationError extends Error {
-    constructor(message) {
-        super(message);
-        this.name = "ValidationError";
-        this.statusCode = 400;
+import { AppError } from "./AppError.js";
+
+export class ValidationError extends AppError {
+    constructor(message = "Erro de validação") {
+        super(message, 400);
     }
 }

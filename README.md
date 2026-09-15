@@ -478,27 +478,7 @@ Algumas possibilidades para evolução:
 - [ ] Testes dos services;
 - [ ] Testes de integração das rotas;
 - [ ] Mock da API do Fogo Cruzado.
-
----
-
-# 🗺️ Roadmap
-
-Possíveis evoluções do projeto:
-
-- [ ] Implementar testes automatizados;
-- [ ] Implementar renovação automática do token;
-- [ ] Adicionar banco de dados próprio;
-- [ ] Expandir informações municipais;
-- [ ] Adicionar serviços públicos;
-- [ ] Adicionar hospitais e unidades de saúde;
-- [ ] Adicionar delegacias;
-- [ ] Adicionar Guarda Municipal;
-- [ ] Adicionar contatos da prefeitura e ouvidoria;
-- [ ] Criar documentação da API;
-- [ ] Implementar Docker;
-- [ ] Preparar ambiente de produção;
-- [ ] Integrar com o aplicativo mobile do VCidade.
-
+      
 ---
 
 # 🎯 Objetivo
@@ -510,19 +490,3 @@ A proposta é utilizar uma interface simples para que o cidadão consiga consult
 O backend é responsável por realizar essa integração, validar as solicitações, processar os dados e disponibilizá-los de maneira estruturada para o aplicativo.
 
 ---
-
-# 👨‍💻 Autor
-
-**Ryan Silva**
-
-Estudante de Ciência da Computação e desenvolvedor do projeto VCidade.
-
-GitHub:
-
-[@ryancpsilva](https://github.com/ryancpsilva)
-
----
-
-# 📄 Licença
-
-Este projeto está licenciado sob a licença **ISC**.
